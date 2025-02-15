@@ -1,9 +1,4 @@
 {
-  "description": "RAG pipeline for code generation using Github repo as context",
-  "icon": null,
-  "name": "Github Repo RAG",
-  "endpoint_name": null,
-  "locked": false,
   "id": "b6c929d8-4a47-415a-8e63-26bc5579b7f7",
   "tags": null,
   "gradient": null,
@@ -286,8 +281,8 @@
           "width": 320
         },
         "position": {
-          "x": 608.2929374397919,
-          "y": 596.4608802574869
+          "x": 816.2761775664382,
+          "y": 846.6225397105161
         },
         "positionAbsolute": {
           "x": 743.9745420290319,
@@ -441,8 +436,8 @@
           "width": 320
         },
         "position": {
-          "x": 1606.0595305373527,
-          "y": 751.4473696960695
+          "x": 1619.1493848110579,
+          "y": 780.5359347487472
         },
         "positionAbsolute": {
           "x": 1606.0595305373527,
@@ -621,8 +616,8 @@
           "width": 320
         },
         "position": {
-          "x": 1977.9097981422992,
-          "y": 640.5656416923846
+          "x": 2015.7249327107802,
+          "y": 690.0162022819369
         },
         "positionAbsolute": {
           "x": 1977.9097981422992,
@@ -789,8 +784,8 @@
           "width": 320
         },
         "position": {
-          "x": 1802.6280445894217,
-          "y": 1464.462437648846
+          "x": 2029.5188520003085,
+          "y": 1422.284018322463
         },
         "positionAbsolute": {
           "x": 1683.4543896546102,
@@ -1072,8 +1067,8 @@
           "width": 320
         },
         "position": {
-          "x": 2786.709367538892,
-          "y": 830.921955068645
+          "x": 2802.7080783178644,
+          "y": 797.4701052580656
         },
         "positionAbsolute": {
           "x": 2734.385670401691,
@@ -1087,8 +1082,8 @@
         "id": "GitExtractorComponent-9GdQb",
         "type": "genericNode",
         "position": {
-          "x": 603.920356449134,
-          "y": 1546.5778886213864
+          "x": 859.8997289126986,
+          "y": 1390.95406558956
         },
         "data": {
           "node": {
@@ -1245,8 +1240,8 @@
         "id": "OllamaModel-v85ni",
         "type": "genericNode",
         "position": {
-          "x": 2375.335366293302,
-          "y": 597.3410950539725
+          "x": 2402.969503093346,
+          "y": 610.4309493276775
         },
         "data": {
           "node": {
@@ -1422,6 +1417,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "options": [
+                  "codellama:latest",
                   "llama3.2:1b"
                 ],
                 "options_metadata": [],
@@ -1431,7 +1427,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "model_name",
-                "value": "llama3.2:1b",
+                "value": "codellama:latest",
                 "display_name": "Model Name",
                 "advanced": false,
                 "dynamic": false,
@@ -1889,7 +1885,7 @@
           "type": "OllamaModel",
           "id": "OllamaModel-v85ni"
         },
-        "selected": true,
+        "selected": false,
         "measured": {
           "width": 320,
           "height": 696
@@ -1900,8 +1896,8 @@
         "id": "ParseData-tgs92",
         "type": "genericNode",
         "position": {
-          "x": 1391.7297229685926,
-          "y": 1527.9977972117663
+          "x": 1649.1635236847912,
+          "y": 1429.0966760326617
         },
         "data": {
           "description": "Convert Data into plain text following a specified template.",
@@ -2049,8 +2045,8 @@
         "id": "AstraDB-afWp6",
         "type": "genericNode",
         "position": {
-          "x": 2226.430252449013,
-          "y": 1530.521980470394
+          "x": 2482.4096249125773,
+          "y": 1422.894289775486
         },
         "data": {
           "node": {
@@ -2566,8 +2562,8 @@
         "id": "AstraDB-MYccB",
         "type": "genericNode",
         "position": {
-          "x": 1142.1815912775803,
-          "y": 635.7796638176615
+          "x": 1206.1764343934715,
+          "y": 701.2289351861865
         },
         "data": {
           "node": {
@@ -3072,7 +3068,7 @@
           "type": "AstraDB",
           "id": "AstraDB-MYccB"
         },
-        "selected": false,
+        "selected": true,
         "measured": {
           "width": 320,
           "height": 566
@@ -3083,8 +3079,8 @@
         "id": "CustomComponent-KPJQY",
         "type": "genericNode",
         "position": {
-          "x": 1000.1474935935292,
-          "y": 1625.348145389127
+          "x": 1248.8547247939243,
+          "y": 1446.4534703151587
         },
         "data": {
           "node": {
@@ -3458,12 +3454,17 @@
       }
     ],
     "viewport": {
-      "x": -116.69422856752169,
-      "y": -174.7214465027276,
-      "zoom": 0.49488800640894426
+      "x": -403.54981958928147,
+      "y": -290.2328437946401,
+      "zoom": 0.6596899230391758
     }
   },
   "user_id": "ef45c9de-ccc1-459d-a501-ab7915436caf",
-  "updated_at": "2025-02-14T19:50:06+00:00",
-  "webhook": false
+  "updated_at": "2025-02-15T06:37:27+00:00",
+  "webhook": false,
+  "description": "RAG pipeline for code generation using Github repo as context",
+  "icon": null,
+  "name": "Github Repo RAG",
+  "endpoint_name": null,
+  "locked": false
 }
