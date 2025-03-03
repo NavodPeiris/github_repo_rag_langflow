@@ -17,6 +17,8 @@
 
 #### Limitations:
 
-hallucinations, incorrect retrieval cause incorrect outputs
+hallucinations, incorrect retrieval cause incorrect outputs  
+
+enjoy!!
 
 ![architecture](architecture.png)
