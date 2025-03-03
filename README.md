@@ -19,6 +19,6 @@
 
 hallucinations, incorrect retrieval cause incorrect outputs  
 
-enjoy!!
+enjoy!
 
 ![architecture](architecture.png)
